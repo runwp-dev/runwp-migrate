@@ -1,0 +1,646 @@
+# Copyright (C) 2026 RunWP
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: RunWP Migrate 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/runwp-migrate\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-14T16:26:03+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: runwp-migrate\n"
+
+#. Plugin Name of the plugin
+#: runwp-migrate.php
+#: includes/class-runwp-migrate-admin.php:61
+#: includes/class-runwp-migrate-admin.php:62
+#: includes/class-runwp-migrate-admin.php:154
+msgid "RunWP Migrate"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: runwp-migrate.php
+msgid "https://github.com/runwp-dev/runwp-migrate"
+msgstr ""
+
+#. Description of the plugin
+#: runwp-migrate.php
+msgid "Pull and push the database and media library between two WordPress sites, with URL and path replacement that keeps serialized data intact."
+msgstr ""
+
+#. Author of the plugin
+#: runwp-migrate.php
+msgid "RunWP"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:74
+#: includes/class-runwp-migrate-admin.php:143
+msgid "Migrate"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:104
+msgid "Asking the other site …"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:105
+msgid "From"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:106
+msgid "To"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:107
+#: includes/class-runwp-migrate-admin.php:269
+msgid "Address"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:108
+msgid "Table prefix"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:109
+#: includes/class-runwp-migrate-admin.php:234
+msgid "Tables"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:110
+msgid "Both sites use the same addresses and paths; nothing is replaced."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:111
+msgid "rows"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:112
+#, php-format
+msgid "The database of this site is replaced with the one of %s, including users: you will have to log in again with an account from there. The current tables are kept as a backup."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:113
+#, php-format
+msgid "The database of %s is replaced with the one of this site, including users and every order or comment that came in there since. Its current tables are kept as a backup."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:114
+msgid "Media files that are missing or differ are copied. No file is deleted."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:115
+msgid "I understand what will be overwritten."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:116
+msgid "Migration running …"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:117
+#, php-format
+msgid "The migration stopped: %s"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:118
+msgid "Fix the cause and try again; the migration continues where it stopped."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:119
+msgid "Cancel the migration? Nothing has been swapped yet; the partial copy is discarded."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:120
+msgid "Migration cancelled. Nothing was changed."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:121
+#, php-format
+msgid "Done. This site now runs on the database of %s. Its users replaced the ones here, so log in again with an account from there."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:122
+#, php-format
+msgid "Done. %s now runs on the database of this site."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:123
+msgid "Done. The media files are copied."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:124
+msgid "Log in"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:125
+msgid "Open site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:126
+msgid "Copied"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:127
+#: includes/class-runwp-migrate-migration.php:127
+msgid "Choose the database, the media, or both."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:128
+msgid "The request did not get through."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:144
+#: includes/class-runwp-migrate-admin.php:185
+msgid "Connections"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:145
+#: includes/class-runwp-migrate-admin.php:367
+msgid "This site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:146
+msgid "Backup"
+msgstr ""
+
+#. translators: %s: link to the Connections tab.
+#: includes/class-runwp-migrate-admin.php:184
+#, php-format
+msgid "Connect another site first, under %s."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:194
+msgid "Other site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:204
+msgid "Direction"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:207
+#: includes/class-runwp-migrate-admin.php:335
+msgid "Pull"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:207
+msgid "copy the other site into this one"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:208
+#: includes/class-runwp-migrate-admin.php:341
+msgid "Push"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:208
+msgid "copy this site into the other one"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:213
+msgid "What"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:216
+msgid "Database"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:217
+msgid "Media (uploads folder)"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:222
+#: includes/class-runwp-migrate-admin.php:226
+msgid "Preview"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:229
+msgid "Replacements"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:230
+msgid "Addresses and paths of the source are rewritten to those of the target, serialized data included."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:235
+msgid "All tables"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:241
+msgid "Start migration"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:245
+msgid "Migration"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:249
+msgid "Try again"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:250
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:264
+#: includes/class-runwp-migrate-admin.php:396
+msgid "Connected sites"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:268
+#: includes/class-runwp-migrate-admin.php:303
+msgid "Name"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:270
+msgid "Added"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:276
+msgid "No sites connected yet."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:284
+msgid "Remove this connection?"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:288
+msgid "Remove"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:296
+msgid "Connect a site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:297
+msgid "Install RunWP Migrate on the other site too, copy its connection info under Tools → RunWP Migrate → This site, and paste it here."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:306
+msgid "Short and without spaces, e.g. live or staging. WP-CLI uses it too: wp runwp-migrate pull live"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:310
+#: includes/class-runwp-migrate-admin.php:324
+msgid "Connection info"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:314
+msgid "Test and save connection"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:325
+msgid "Paste this on the other site to connect it to this one. Keep it to yourself: it gives access to everything you allow below."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:327
+msgid "Copy"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:329
+msgid "Access"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:337
+msgid "Connected sites may read the database and media of this site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:343
+msgid "Connected sites may overwrite the database and media of this site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:344
+msgid "On a live site, switch this on only for the moment you push to it."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:348
+msgid "Save"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:351
+msgid "Key"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:352
+msgid "A new key locks out every site that is connected to this one. Connect them again with the new connection info."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:353
+msgid "Create a new key? Connected sites lose access."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:356
+msgid "Create new key"
+msgstr ""
+
+#. translators: 1: number of tables, 2: date and time, 3: origin address.
+#: includes/class-runwp-migrate-admin.php:374
+#, php-format
+msgid "%1$s tables were set aside on %2$s, before data from %3$s replaced them."
+msgstr ""
+
+#. translators: %s: number of tables.
+#: includes/class-runwp-migrate-admin.php:381
+#, php-format
+msgid "%s tables from before the last migration are set aside."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:385
+msgid "Put the old tables back? The data the migration brought is discarded, and you may have to log in again."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:388
+msgid "Restore this site"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:391
+msgid "No backup yet. Every migration into this site keeps the tables it replaces until the next one."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:397
+msgid "Undo the last push to a connected site. That site has to allow pushing."
+msgstr ""
+
+#. translators: %s: site address.
+#: includes/class-runwp-migrate-admin.php:399
+#, php-format
+msgid "Put the tables of %s back as they were before the last push?"
+msgstr ""
+
+#. translators: %s: connection name.
+#: includes/class-runwp-migrate-admin.php:405
+#, php-format
+msgid "Restore %s"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:452
+#: includes/class-runwp-migrate-admin.php:567
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:465
+msgid "Access saved."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:474
+msgid "New key created. Connect the other sites again."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:489
+msgid "Give the connection a name."
+msgstr ""
+
+#. translators: %s: error message.
+#: includes/class-runwp-migrate-admin.php:498
+#, php-format
+msgid "Not saved: %s"
+msgstr ""
+
+#. translators: 1: connection name, 2: site name, 3: what the site allows.
+#: includes/class-runwp-migrate-admin.php:508
+#, php-format
+msgid "Connected \"%1$s\" (%2$s). It allows: %3$s."
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:523
+msgid "pull"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:526
+msgid "push"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:528
+msgid "nothing yet"
+msgstr ""
+
+#: includes/class-runwp-migrate-admin.php:540
+msgid "Connection removed."
+msgstr ""
+
+#. translators: %s: number of tables.
+#: includes/class-runwp-migrate-admin.php:558
+#, php-format
+msgid "Restored %s tables."
+msgstr ""
+
+#: includes/class-runwp-migrate-auth.php:77
+msgid "The request is not signed."
+msgstr ""
+
+#: includes/class-runwp-migrate-auth.php:81
+msgid "The request is too old or from the future. Check that both servers have the right time."
+msgstr ""
+
+#: includes/class-runwp-migrate-auth.php:90
+msgid "The signature does not match. The key may have changed; connect the sites again."
+msgstr ""
+
+#: includes/class-runwp-migrate-auth.php:96
+msgid "This request was already processed."
+msgstr ""
+
+#: includes/class-runwp-migrate-database.php:286
+msgid "The table definition sent is not a CREATE TABLE statement."
+msgstr ""
+
+#: includes/class-runwp-migrate-database.php:368
+msgid "A column name in the data is not valid."
+msgstr ""
+
+#: includes/class-runwp-migrate-database.php:376
+msgid "A row in the data does not match its columns."
+msgstr ""
+
+#. translators: %s: table name.
+#: includes/class-runwp-migrate-database.php:421
+#, php-format
+msgid "Table %s was not transferred completely. Start the migration again."
+msgstr ""
+
+#: includes/class-runwp-migrate-database.php:484
+msgid "There is no backup to restore."
+msgstr ""
+
+#. translators: %s: table name.
+#: includes/class-runwp-migrate-database.php:680
+#, php-format
+msgid "%s is not a valid table name for this site."
+msgstr ""
+
+#. translators: %s: table name.
+#: includes/class-runwp-migrate-database.php:685
+#, php-format
+msgid "Table name %s is too long to migrate."
+msgstr ""
+
+#. translators: %s: table name.
+#: includes/class-runwp-migrate-database.php:697
+#, php-format
+msgid "Table %s does not exist on this site."
+msgstr ""
+
+#. translators: 1: site address, 2: error message.
+#: includes/class-runwp-migrate-endpoint.php:233
+#, php-format
+msgid "Could not reach %1$s: %2$s"
+msgstr ""
+
+#. translators: 1: site address, 2: redirect target.
+#: includes/class-runwp-migrate-endpoint.php:241
+#, php-format
+msgid "%1$s redirects to %2$s. Connect the sites again using that address."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-runwp-migrate-endpoint.php:248
+#, php-format
+msgid "The other site answered with HTTP %d."
+msgstr ""
+
+#: includes/class-runwp-migrate-endpoint.php:251
+msgid "RunWP Migrate is not active on the other site."
+msgstr ""
+
+#: includes/class-runwp-migrate-endpoint.php:258
+msgid "The other site sent an answer that is not valid. Is a security plugin or firewall blocking the REST API?"
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:146
+#, php-format
+msgid "Could not read %s."
+msgstr ""
+
+#: includes/class-runwp-migrate-files.php:183
+msgid "Received file data is corrupt."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:188
+#, php-format
+msgid "Parts of %s arrived out of order. Start the migration again."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:194
+#, php-format
+msgid "Could not write %s. Check the permissions of the uploads folder."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:203
+#, php-format
+msgid "%s arrived incomplete. Start the migration again."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:226
+#, php-format
+msgid "%s may not be transferred."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:243
+#, php-format
+msgid "%s lies outside the uploads folder."
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/class-runwp-migrate-files.php:248
+#, php-format
+msgid "%s no longer exists."
+msgstr ""
+
+#. translators: %s: connection name.
+#: includes/class-runwp-migrate-migration.php:43
+#: includes/class-runwp-migrate-migration.php:492
+#, php-format
+msgid "There is no connection called \"%s\"."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:80
+msgid "The two sites run versions of RunWP Migrate that cannot talk to each other. Update it on both."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:83
+#: runwp-migrate.php:67
+msgid "RunWP Migrate does not support multisite networks."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:88
+msgid "This connection leads back to this very site."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:93
+msgid "Pulling is switched off on the other site. Allow it there under Tools → RunWP Migrate."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:96
+msgid "Pushing is switched off on the other site. Allow it there under Tools → RunWP Migrate."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:148
+msgid "No tables selected."
+msgstr ""
+
+#. translators: %s: table name.
+#: includes/class-runwp-migrate-migration.php:154
+#, php-format
+msgid "Table name %s is too long to migrate. Leave the table out."
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:237
+msgid "No migration is running."
+msgstr ""
+
+#. translators: 1: table name, 2: rows sent, 3: estimated rows.
+#: includes/class-runwp-migrate-migration.php:546
+#, php-format
+msgid "Table %1$s: %2$s of about %3$s rows"
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:549
+msgid "Comparing media files …"
+msgstr ""
+
+#. translators: 1: files done, 2: files total, 3: size done, 4: size total.
+#: includes/class-runwp-migrate-migration.php:555
+#, php-format
+msgid "Media: %1$s of %2$s files (%3$s of %4$s)"
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:563
+msgid "Swapping in the new tables …"
+msgstr ""
+
+#: includes/class-runwp-migrate-migration.php:566
+msgid "Done."
+msgstr ""
+
+#: includes/class-runwp-migrate-rest.php:156
+msgid "Pulling from this site is switched off. Allow it under Tools → RunWP Migrate on that site."
+msgstr ""
+
+#: includes/class-runwp-migrate-rest.php:160
+msgid "Pushing to this site is switched off. Allow it under Tools → RunWP Migrate on that site."
+msgstr ""
+
+#: includes/class-runwp-migrate-settings.php:126
+msgid "Paste the connection info exactly as the other site shows it: its address and its key."
+msgstr ""
+
+#: includes/class-runwp-migrate-settings.php:143
+msgid "That is not a valid site address."
+msgstr ""
+
+#: includes/class-runwp-migrate-settings.php:150
+msgid "The other site must be reached over HTTPS."
+msgstr ""
+
+#: includes/class-runwp-migrate-settings.php:154
+msgid "That key is not valid. Copy it again from the other site."
+msgstr ""
+
+#: runwp-migrate.php:68
+msgid "Plugin activation failed"
+msgstr ""
